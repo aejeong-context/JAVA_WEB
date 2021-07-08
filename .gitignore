@@ -14,7 +14,7 @@ local.properties
 .loadpath
 .recommenders
 .target/
-
+.idea
 # ignore properties file
 config.properties
 

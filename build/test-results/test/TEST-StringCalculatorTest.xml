@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="StringCalculatorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-16T14:31:44" hostname="aejeongui-MacBookPro-2.local" time="0.012">
+<testsuite name="StringCalculatorTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-07-08T13:38:53" hostname="aejeongui-MacBookPro-2.local" time="0.016">
   <properties/>
-  <testcase name="음수일 때 에러" classname="StringCalculatorTest" time="0.012"/>
+  <testcase name="빈문자열 계산하는 메서드" classname="StringCalculatorTest" time="0.013"/>
+  <testcase name="구분자를 포함한 문자열을 계산하는 메서드" classname="StringCalculatorTest" time="0.001"/>
+  <testcase name="숫자 하나일 때 해당 숫자를 int 로 반환" classname="StringCalculatorTest" time="0.0"/>
+  <testcase name="커스텀 구분자를 이용해 문자열을 계산하는 메서드" classname="StringCalculatorTest" time="0.001"/>
+  <testcase name="음수일 때 에러" classname="StringCalculatorTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
