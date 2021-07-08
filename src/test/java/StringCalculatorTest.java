@@ -13,6 +13,11 @@ class StringCalculatorTest {
         stringCalculator = new StringCalculator();
     }
 
+    @Test
+    @DisplayName(value = "숫자 하나일 때 해당 숫자를 int 로 반환")
+    void 숫자_하나(){
+        assertEquals(1,stringCalculator.cal("1"));
+    }
 
     @Test
     @DisplayName(value="빈문자열 계산하는 메서드")

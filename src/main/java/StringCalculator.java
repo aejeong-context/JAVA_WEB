@@ -7,11 +7,9 @@ public class StringCalculator {
 
   public int cal (String text){
 
-    int result = 0;
-    Matcher matcher = Pattern.compile("//(.)\n(.*)").matcher(text);
-
-
     if(text == null || text.isEmpty()) return 0;
+
+    Matcher matcher = Pattern.compile("//(.)\n(.*)").matcher(text);
 
     if(matcher.find()){
       String customDelimeter = matcher.group(1);
@@ -25,14 +23,22 @@ public class StringCalculator {
 
   }
 
-  public int add(String[] numbers){
+  private int add(String[] numbers){
     int result = 0;
     for(String num : numbers){
-      result+=parseInt(num);
+      result+=toPositive(num);
     }
     if(result<0){
       throw new RuntimeException();
     }
     return result;
+  }
+
+  private int toPositive(String num){
+    int number = Integer.parseInt(num);
+    if(number<0){
+      throw new RuntimeException();
+    }
+    return number;
   }
 }
